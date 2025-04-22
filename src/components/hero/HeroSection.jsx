@@ -10,6 +10,21 @@ import women_3 from "./../../images/women-3.png";
 import LogoWrapper from "../logoWrapper/LogoWrapper";
 import CustomizeButton from "../customizeButton/CustomizeButton";
 
+const infoItems = [
+  {
+    img: small_Logo_1,
+    text: "Beautiful, comfortable loungewear for day or night.",
+  },
+  {
+    img: small_Logo_2,
+    text: "No wasteful extras, like tags or plastic packaging.",
+  },
+  {
+    img: small_Logo_3,
+    text: "Our signature fabric is incredibly comfortable — unlike anything you’ve ever felt.",
+  },
+];
+
 const HeroSection = () => {
   return (
     <>
@@ -20,30 +35,13 @@ const HeroSection = () => {
             <div className={styles.title}>
               Don’t apologize for being comfortable.
             </div>
-            <div className={styles.info}>
-              <LogoWrapper img={small_Logo_1} />
 
-              <div className={styles.info_text}>
-                Beautiful, comfortable loungewear for day or night.
+            {infoItems.map((item, index) => (
+              <div key={index} className={styles.info}>
+                <LogoWrapper img={item.img} />
+                <div className={styles.info_text}>{item.text}</div>
               </div>
-            </div>
-
-            <div className={styles.info}>
-              <LogoWrapper img={small_Logo_2} />
-
-              <div className={styles.info_text}>
-                No wasteful extras, like tags or plastic packaging.
-              </div>
-            </div>
-
-            <div className={styles.info}>
-              <LogoWrapper img={small_Logo_3} />
-
-              <div className={styles.info_text}>
-                Our signature fabric is incredibly comfortable — unlike anything
-                you’ve ever felt.
-              </div>
-            </div>
+            ))}
 
             <CustomizeButton />
           </div>

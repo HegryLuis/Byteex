@@ -15,6 +15,29 @@ import women_1 from "./../../images/women-1.png";
 import women_2 from "./../../images/women-2.png";
 import women_3 from "./../../images/women-3.png";
 
+const benefitsData = [
+  {
+    img: smallLogo_1,
+    title: "Ethically sourced.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+  },
+  {
+    img: smallLogo_2,
+    title: "Ethically sourced.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+  },
+  {
+    img: smallLogo_3,
+    title: "Ethically sourced.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+  },
+  {
+    img: smallLogo_4,
+    title: "Ethically sourced.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+  },
+];
+
 const Benefits = () => {
   const woman = [women_1, women_2, women_3];
 
@@ -37,54 +60,16 @@ const Benefits = () => {
           <div className={styles.benefits_wrap}>
             <div className={styles.benefits_content}>
               <h1 className={styles.title}>Loungewear you can be proud of.</h1>
-              <div className={styles.benefits_block}>
-                <LogoWrapper img={smallLogo_1} />
-                <div className={styles.block_text}>
-                  <h3>Ethically sourced.</h3>
-                  <span>
-                    {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce lobortis sapien facilisis tincidunt pellentesque. In
-                    eget ipsum et felis finibus consequat.{" "}
-                  </span>
-                </div>
-              </div>
 
-              <div className={styles.benefits_block}>
-                <LogoWrapper img={smallLogo_2} />
-                <div className={styles.block_text}>
-                  <h3>Ethically sourced.</h3>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce lobortis sapien facilisis tincidunt pellentesque. In
-                    eget ipsum et felis finibus consequat.{" "}
-                  </span>
+              {benefitsData.map((benefit, index) => (
+                <div key={index} className={styles.benefits_block}>
+                  <LogoWrapper img={benefit.img} />
+                  <div className={styles.block_text}>
+                    <h3>{benefit.title}</h3>
+                    <span>{benefit.text}</span>
+                  </div>
                 </div>
-              </div>
-
-              <div className={styles.benefits_block}>
-                <LogoWrapper img={smallLogo_3} />
-                <div className={styles.block_text}>
-                  <h3>Ethically sourced.</h3>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce lobortis sapien facilisis tincidunt pellentesque. In
-                    eget ipsum et felis finibus consequat.{" "}
-                  </span>
-                </div>
-              </div>
-
-              <div className={styles.benefits_block}>
-                <LogoWrapper img={smallLogo_4} />
-                <div className={styles.block_text}>
-                  <h3>Ethically sourced.</h3>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Fusce lobortis sapien facilisis tincidunt pellentesque. In
-                    eget ipsum et felis finibus consequat.{" "}
-                  </span>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className={styles.slider_wrapper}>

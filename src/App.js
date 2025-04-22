@@ -1,5 +1,6 @@
 import "./App.css";
 import Benefits from "./components/benefits/Benefits";
+import DescribeBlock from "./components/describeBlock/DescribeBlock";
 import Founder from "./components/founder/Founder";
 import HeroSection from "./components/hero/HeroSection";
 import comment_women from "./images/comment-women.png";
@@ -41,6 +42,7 @@ function App() {
 
       <Benefits />
       <Founder />
+      <DescribeBlock stars={stars} />
     </div>
   );
 }
