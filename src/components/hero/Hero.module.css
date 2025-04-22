@@ -48,31 +48,6 @@
   color: #676869;
 }
 
-.btn {
-  width: 350px;
-  height: 60px;
-  background: #01005b;
-  margin-top: 30px;
-}
-
-.btn_content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.btn_text {
-  font-family: Suisse Int "l";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #fff;
-}
-
 .images_container {
   position: relative;
   width: 60%;

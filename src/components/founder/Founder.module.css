@@ -1,0 +1,40 @@
+.wrap {
+  width: 100%;
+  background: #f0eeef;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+}
+
+.content h3 {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #2a2996;
+  margin-bottom: 50px;
+}
+
+.text {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 3%;
+  color: #6c6c6c;
+}
+
+.text p {
+  margin: 5px 0;
+}

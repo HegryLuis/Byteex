@@ -4,11 +4,11 @@ import logo from "./../../images/logo.svg";
 import small_Logo_1 from "./../../images/small_Logo_1.svg";
 import small_Logo_2 from "./../../images/small_Logo_2.svg";
 import small_Logo_3 from "./../../images/small_Logo_3.svg";
-import arrow from "./../../images/arrow.svg";
 import women_1 from "./../../images/women-1.png";
 import women_2 from "./../../images/women-2.png";
 import women_3 from "./../../images/women-3.png";
 import LogoWrapper from "../logoWrapper/LogoWrapper";
+import CustomizeButton from "../customizeButton/CustomizeButton";
 
 const HeroSection = () => {
   return (
@@ -45,12 +45,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <button className={styles.btn} type="submit">
-              <div className={styles.btn_content}>
-                <span className={styles.btn_text}>Customize Your Outfit</span>
-                <img alt="arrow" src={arrow} />
-              </div>
-            </button>
+            <CustomizeButton />
           </div>
 
           <div className={styles.images_container}>

@@ -1,5 +1,6 @@
 import "./App.css";
 import Benefits from "./components/benefits/Benefits";
+import Founder from "./components/founder/Founder";
 import HeroSection from "./components/hero/HeroSection";
 import comment_women from "./images/comment-women.png";
 import star from "./images/star.png";
@@ -39,6 +40,7 @@ function App() {
       </div>
 
       <Benefits />
+      <Founder />
     </div>
   );
 }
