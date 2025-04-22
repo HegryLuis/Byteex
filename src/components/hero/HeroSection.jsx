@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import logo from "./img/logo.svg";
-import infoLogo_1 from "./img/infoLogo-1.svg";
-import infoLogo_2 from "./img/infoLogo-2.svg";
-import infoLogo_3 from "./img/infoLogo-3.svg";
-import arrow from "./img/arrow.svg";
+import logo from "./../../images/logo.svg";
+import small_Logo_1 from "./../../images/small_Logo_1.svg";
+import small_Logo_2 from "./../../images/small_Logo_2.svg";
+import small_Logo_3 from "./../../images/small_Logo_3.svg";
+import arrow from "./../../images/arrow.svg";
 import women_1 from "./../../images/women-1.png";
 import women_2 from "./../../images/women-2.png";
 import women_3 from "./../../images/women-3.png";
+import LogoWrapper from "../logoWrapper/LogoWrapper";
 
 const HeroSection = () => {
   return (
@@ -20,9 +21,7 @@ const HeroSection = () => {
               Don’t apologize for being comfortable.
             </div>
             <div className={styles.info}>
-              <div className={styles.info_logo}>
-                <img alt="logo-1" src={infoLogo_1} />
-              </div>
+              <LogoWrapper img={small_Logo_1} />
 
               <div className={styles.info_text}>
                 Beautiful, comfortable loungewear for day or night.
@@ -30,9 +29,7 @@ const HeroSection = () => {
             </div>
 
             <div className={styles.info}>
-              <div className={styles.info_logo}>
-                <img alt="logo-2" src={infoLogo_2} />
-              </div>
+              <LogoWrapper img={small_Logo_2} />
 
               <div className={styles.info_text}>
                 No wasteful extras, like tags or plastic packaging.
@@ -40,9 +37,7 @@ const HeroSection = () => {
             </div>
 
             <div className={styles.info}>
-              <div className={styles.info_logo}>
-                <img alt="logo-3" src={infoLogo_3} />
-              </div>
+              <LogoWrapper img={small_Logo_3} />
 
               <div className={styles.info_text}>
                 Our signature fabric is incredibly comfortable — unlike anything

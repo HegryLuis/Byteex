@@ -1,0 +1,91 @@
+.wrap {
+  margin-top: 150px;
+}
+
+.container {
+  padding-top: 100px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #f9f0e5 0%,
+    rgba(249, 240, 229, 0.18) 43.05%,
+    rgba(249, 240, 229, 0) 100%
+  );
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header_title {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #868787;
+}
+
+.brand_block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand_logo {
+  max-width: 200px;
+  max-height: 40px;
+}
+
+.benefits_wrap {
+  width: 90%;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #01005b;
+}
+
+.benefits_content {
+  width: 40%;
+}
+
+.benefits_block {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block_text {
+  width: 90%;
+}
+
+.block_text h3 {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #01005b;
+}
+
+.block_text span {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #6c6c6c;
+}

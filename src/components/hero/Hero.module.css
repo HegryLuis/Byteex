@@ -76,6 +76,7 @@
 .images_container {
   position: relative;
   width: 60%;
+  overflow: hidden;
 }
 
 .images_section {
