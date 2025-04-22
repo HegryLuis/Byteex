@@ -3,6 +3,7 @@ import Benefits from "./components/benefits/Benefits";
 import DescribeBlock from "./components/describeBlock/DescribeBlock";
 import Founder from "./components/founder/Founder";
 import HeroSection from "./components/hero/HeroSection";
+import Reviews from "./components/reviews/Reviews";
 import comment_women from "./images/comment-women.png";
 import star from "./images/star.png";
 
@@ -43,6 +44,7 @@ function App() {
       <Benefits />
       <Founder />
       <DescribeBlock stars={stars} />
+      <Reviews stars={stars} />
     </div>
   );
 }
