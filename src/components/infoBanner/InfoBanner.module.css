@@ -1,0 +1,53 @@
+.wrap {
+  width: 100%;
+  background: #f0eeef;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.info_title {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #15005b;
+}
+
+.info_content {
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Sofia Pro;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #15005b;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}

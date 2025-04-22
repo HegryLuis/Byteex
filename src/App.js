@@ -4,6 +4,7 @@ import DescribeBlock from "./components/describeBlock/DescribeBlock";
 import FAQ from "./components/faq/FAQ";
 import Founder from "./components/founder/Founder";
 import HeroSection from "./components/hero/HeroSection";
+import InfoBanner from "./components/infoBanner/InfoBanner";
 import Reviews from "./components/reviews/Reviews";
 import comment_women from "./images/comment-women.png";
 import star from "./images/star.png";
@@ -47,6 +48,7 @@ function App() {
       <DescribeBlock stars={stars} />
       <Reviews stars={stars} />
       <FAQ />
+      <InfoBanner />
     </div>
   );
 }
