@@ -1,6 +1,7 @@
 import "./App.css";
 import Benefits from "./components/benefits/Benefits";
 import DescribeBlock from "./components/describeBlock/DescribeBlock";
+import FAQ from "./components/faq/FAQ";
 import Founder from "./components/founder/Founder";
 import HeroSection from "./components/hero/HeroSection";
 import Reviews from "./components/reviews/Reviews";
@@ -45,6 +46,7 @@ function App() {
       <Founder />
       <DescribeBlock stars={stars} />
       <Reviews stars={stars} />
+      <FAQ />
     </div>
   );
 }
