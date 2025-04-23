@@ -54,7 +54,13 @@ const FAQ = () => {
               <div key={index} className={styles.item}>
                 <div className={styles.question} onClick={() => toggle(index)}>
                   <span>{item.question}</span>
-                  {openIndex === index ? <span>-</span> : <span>+</span>}
+                  <span
+                    className={`${styles.icon} ${
+                      openIndex === index ? styles.rotated : ""
+                    }`}
+                  >
+                    +
+                  </span>
                 </div>
 
                 <div
