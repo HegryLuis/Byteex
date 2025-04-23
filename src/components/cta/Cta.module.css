@@ -1,0 +1,151 @@
+.wrap {
+  background: linear-gradient(
+    0deg,
+    #f9f0e5 0%,
+    rgba(249, 240, 229, 0.18) 43.05%,
+    rgba(249, 240, 229, 0) 100%
+  );
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.text_block {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.text_block h2 {
+  line-height: 40px;
+  font-size: 32px;
+  color: #01005b;
+}
+
+.text_block h3 {
+  font-size: 15px;
+  line-height: 22px;
+  color: #676869;
+}
+
+.images_container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.images_section {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.images_section img {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.images_section img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.images_section_1 {
+  height: 100%;
+  z-index: 100;
+}
+
+.images_section_1 img {
+  height: 100%;
+}
+
+.images_section_2 {
+  height: 70%;
+  z-index: 2;
+}
+
+.images_section_2 img {
+  margin: 0 100px;
+}
+
+.images_section_3 {
+  height: 50%;
+  z-index: 1;
+}
+
+.empty_img {
+  width: 150px;
+  height: 180px;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 240, 229, 0.7) 0%,
+    rgba(249, 240, 229, 0.217) 100%
+  );
+
+  margin: 0 200px;
+}
+
+.btn_block {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_block img {
+  border-left: 3px solid #c4c4c440;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+}
+
+.clock span {
+  margin-left: 3px;
+  font-family: Suisse Int;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 17px;
+  letter-spacing: 4%;
+  color: #1fad40;
+}
+
+.info_content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_block {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 300px;
+}
+
+.info_block span {
+  font-family: Sofia Pro;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3%;
+  color: #676869;
+}
+
+.info_block:not(:last-child) {
+  border-right: 2px solid #c4c4c466;
+}

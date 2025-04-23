@@ -9,6 +9,7 @@ import women_2 from "./../../images/women-2.png";
 import women_3 from "./../../images/women-3.png";
 import LogoWrapper from "../logoWrapper/LogoWrapper";
 import CustomizeButton from "../customizeButton/CustomizeButton";
+import ImagesAlbum from "../imagesAlbum/ImagesAlbum";
 
 const infoItems = [
   {
@@ -46,27 +47,7 @@ const HeroSection = () => {
             <CustomizeButton />
           </div>
 
-          <div className={styles.images_container}>
-            <div
-              className={`${styles.images_section_1} ${styles.images_section}`}
-            >
-              <img alt="women-1" src={women_1} />
-            </div>
-
-            <div
-              className={`${styles.images_section} ${styles.images_section_2}`}
-            >
-              <img alt="women-2" src={women_2} />
-              <img alt="women-3" src={women_3} />
-            </div>
-
-            <div
-              className={`${styles.images_section} ${styles.images_section_3}`}
-            >
-              <div className={styles.empty_img}></div>
-              <div className={styles.empty_img}></div>
-            </div>
-          </div>
+          <ImagesAlbum images={[women_1, women_2, women_3]} />
         </div>
       </div>
     </>
