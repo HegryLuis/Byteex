@@ -54,12 +54,18 @@ const DescribeBlock = ({ stars }) => {
           {steps.map((step, index) => {
             const isActive = index === activeIndex;
             const bgClass = index === 1 ? styles.beige : styles.gray;
+
+            const isDesktop = window.innerWidth >= 1440;
+            const visibilityClass = isDesktop
+              ? ""
+              : isActive
+              ? styles.active
+              : styles.hidden;
+
             return (
               <div
                 key={index}
-                className={`${styles.content_block} ${bgClass} ${
-                  isActive ? styles.active : styles.hidden
-                }`}
+                className={`${styles.content_block} ${bgClass} ${visibilityClass}`}
               >
                 <div className={styles.img_wrap}>
                   <img alt="logo" src={step.img} />

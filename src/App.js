@@ -19,8 +19,9 @@ function App() {
   return (
     <div className="App">
       <div className="header-line">
-        {`CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT) | FREE
-         SHIPPING on orders > $200 | easy 45 day return window.`}
+        <span>{`CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)`}</span>
+        <span>{`FREE SHIPPING on orders > $200`}</span>
+        <span>{`easy 45 day return window.`}</span>
       </div>
       <div className="container">
         <HeroSection />

@@ -7,7 +7,7 @@
   margin: 80px 0;
   width: 100%;
   text-align: center;
-  font-family: Sofia Pro;
+  font-family: Poppins;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
@@ -49,7 +49,7 @@
 
 .block_title {
   margin: 10px 0;
-  font-family: Sofia Pro;
+  font-family: Poppins;
   font-weight: 400;
   font-size: 22px;
   line-height: 40px;
@@ -59,7 +59,7 @@
 }
 
 .content_block span {
-  font-family: Sofia Pro;
+  font-family: Poppins;
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
@@ -84,7 +84,7 @@
 
 .rating span {
   margin-left: 20px;
-  font-family: Suisse Int;
+  font-family: Questrial;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
@@ -94,6 +94,33 @@
 
 .slider_wrapper {
   display: none;
+}
+
+@media (min-width: 1440px) {
+  .slider_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .slider_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .content_block {
+    display: block !important;
+    width: 30%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .dots {
+    display: none;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -157,5 +184,12 @@
 
   .active_dot {
     background-color: #01005b;
+  }
+}
+
+@media (max-width: 425px) {
+  .rating {
+    flex-direction: column;
+    align-items: center;
   }
 }

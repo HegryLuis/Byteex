@@ -13,7 +13,7 @@
 }
 
 .title {
-  font-family: Sofia Pro;
+  font-family: Poppins;
   font-weight: 800;
   font-size: 38px;
   line-height: 45px;
@@ -40,7 +40,7 @@
 .info_text {
   display: flex;
   align-items: center;
-  font-family: Sofia Pro;
+  font-family: Poppins;
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
