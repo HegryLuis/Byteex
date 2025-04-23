@@ -45,12 +45,17 @@
   border-radius: 50%;
 }
 
+.comment-nameAndRating {
+  display: flex;
+}
+
 .comment-name {
   font-family: Sofia Pro;
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
   letter-spacing: 0.03em;
+  padding-right: 10px;
 }
 
 .comment-head {
@@ -67,4 +72,27 @@
   font-size: 14px;
   line-height: 23px;
   color: #676869;
+}
+
+@media (max-width: 768px) {
+  .comment-block {
+    left: 5%;
+    max-width: 400px;
+    transform: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .comment-block {
+    left: 0;
+  }
+
+  .comment-info {
+    justify-content: flex-start;
+  }
+
+  .comment-nameAndRating {
+    flex-direction: column-reverse;
+    padding: 0 10px;
+  }
 }

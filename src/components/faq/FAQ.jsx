@@ -38,7 +38,7 @@ const data = [
 ];
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(0); // первый вопрос открыт
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (index) => {
     setOpenIndex((prev) => (prev === index ? null : index));
@@ -56,9 +56,14 @@ const FAQ = () => {
                   <span>{item.question}</span>
                   {openIndex === index ? <span>-</span> : <span>+</span>}
                 </div>
-                {openIndex === index && (
+
+                <div
+                  className={`${styles.answerWrapper} ${
+                    openIndex === index ? styles.open : ""
+                  }`}
+                >
                   <div className={styles.answer}>{item.answer}</div>
-                )}
+                </div>
               </div>
             ))}
           </div>

@@ -60,3 +60,56 @@
   color: #555;
   line-height: 1.5;
 }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+@media (max-width: 1440px) {
+  .slider {
+    justify-content: center;
+  }
+
+  .sliderWrap {
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sliderWrap {
+    padding: 0;
+  }
+
+  .arrow {
+    padding: 0;
+  }
+
+  .card_top {
+    display: flex;
+  }
+
+  .card_topLeft {
+    margin-left: 20px;
+  }
+
+  .card {
+    width: 250px;
+  }
+}

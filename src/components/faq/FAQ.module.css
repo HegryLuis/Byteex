@@ -53,6 +53,19 @@
   color: #666;
   font-size: 15px;
   line-height: 1.5;
+  padding-top: 8px;
+}
+
+.answerWrapper {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  max-height: 0;
+  opacity: 0;
+}
+
+.answerWrapper.open {
+  max-height: 500px;
+  opacity: 1;
 }
 
 .right {
@@ -122,4 +135,25 @@
   bottom: 5%;
   left: 15%;
   transform: translate(-5%, -15%);
+}
+
+@media (max-width: 1440px) {
+  .right {
+    display: none;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .left {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .accordion {
+    width: 90%;
+  }
 }

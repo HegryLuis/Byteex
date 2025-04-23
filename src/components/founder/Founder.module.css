@@ -38,3 +38,27 @@
 .text p {
   margin: 5px 0;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .block_text h3 {
+    text-align: center;
+  }
+
+  .text {
+    margin-top: 10px;
+  }
+
+  .btn_wrap {
+    display: flex;
+    justify-content: center;
+  }
+}

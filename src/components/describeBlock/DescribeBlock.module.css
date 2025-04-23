@@ -91,3 +91,71 @@
   letter-spacing: 0.02em;
   color: #828282;
 }
+
+.slider_wrapper {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .content_wrap {
+    display: none;
+  }
+
+  .slider_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+  }
+
+  .slider_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content_block {
+    width: 90%;
+    max-width: 400px;
+    transition: opacity 0.3s ease;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px;
+    color: #01005b;
+    display: flex;
+    align-items: center;
+  }
+
+  .dots {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .active_dot {
+    background-color: #01005b;
+  }
+}

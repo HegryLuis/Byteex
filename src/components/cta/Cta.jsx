@@ -30,7 +30,9 @@ const Cta = () => {
         <ImagesAlbum images={[women_1, women_2, women_3]} />
 
         <div className={styles.btn_block}>
-          <CustomizeButton />
+          <div className={styles.btn_wrap}>
+            <CustomizeButton />
+          </div>
 
           <div className={styles.footer_block}>
             <div className={styles.clock}>

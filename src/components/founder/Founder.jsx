@@ -55,7 +55,9 @@ const Founder = () => {
             <>Cras mattis varius mollis.</>
           </div>
 
-          <CustomizeButton />
+          <div className={styles.btn_wrap}>
+            <CustomizeButton />
+          </div>
         </div>
       </div>
     </div>

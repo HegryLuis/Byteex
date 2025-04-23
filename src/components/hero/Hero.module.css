@@ -96,3 +96,33 @@
 
   margin: 0 200px;
 }
+
+@media (max-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .wrap {
+    width: 100%;
+    align-items: center;
+  }
+
+  .wrap_logo {
+    display: flex;
+    margin: 20px auto;
+  }
+
+  .btn_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .info_block {
+    max-width: 100%;
+  }
+}

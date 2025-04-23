@@ -58,3 +58,25 @@
 
   margin: 0 200px;
 }
+
+@media (max-width: 1024px) {
+  .images_container {
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .images_section_2 img {
+    margin: 0 50px;
+  }
+
+  .empty_img {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .images_container {
+    width: 100%;
+  }
+}

@@ -61,3 +61,26 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+@media (max-width: 1024px) {
+  .info_block:not(:last-child)::after {
+    right: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .info_content {
+    flex-direction: column;
+  }
+
+  .info_block {
+    padding: 20px 0;
+  }
+
+  .info_block:not(:last-child)::after {
+    right: 0;
+    bottom: 0%;
+    height: 2px;
+    width: 100%;
+  }
+}

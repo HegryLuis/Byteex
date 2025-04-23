@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Benefits.module.css";
 import brand_1 from "./../../images/brand-1.png";
 import brand_2 from "./../../images/brand-2.png";
@@ -39,7 +39,24 @@ const benefitsData = [
 ];
 
 const Benefits = () => {
+  const [currentBrandIndex, setCurrentBrandIndex] = useState(0);
   const woman = [women_1, women_2, women_3];
+  const brands = [brand_1, brand_2, brand_3, brand_4, brand_5];
+
+  const visibleBrandsCount = 3;
+  const totalSlides = Math.ceil(brands.length / visibleBrandsCount);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBrandIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [totalSlides]);
+
+  const visibleBrands = brands.slice(
+    currentBrandIndex * visibleBrandsCount,
+    currentBrandIndex * visibleBrandsCount + visibleBrandsCount
+  );
 
   return (
     <>
@@ -49,11 +66,28 @@ const Benefits = () => {
             <span className={styles.header_title}>as seen in</span>
 
             <div className={styles.brand_block}>
-              <img src={brand_1} alt="brand-1" className={styles.brand_logo} />
-              <img src={brand_2} alt="brand-2" className={styles.brand_logo} />
-              <img src={brand_3} alt="brand-3" className={styles.brand_logo} />
-              <img src={brand_4} alt="brand-4" className={styles.brand_logo} />
-              <img src={brand_5} alt="brand-5" className={styles.brand_logo} />
+              {visibleBrands.map((brand, index) => {
+                return (
+                  <img
+                    key={index}
+                    src={brand}
+                    alt={`brand-${index}`}
+                    className={styles.brand_logo}
+                  />
+                );
+              })}
+            </div>
+
+            <div className={styles.dots}>
+              {Array.from({ length: totalSlides }).map((_, index) => (
+                <span
+                  key={index}
+                  className={`${styles.dot} ${
+                    index === currentBrandIndex ? styles.active : ""
+                  }`}
+                  onClick={() => setCurrentBrandIndex(index)}
+                />
+              ))}
             </div>
           </div>
 

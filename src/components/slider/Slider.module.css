@@ -65,3 +65,10 @@
   border-color: #01005b;
   opacity: 1;
 }
+
+@media (max-width: 425px) {
+  .main_image {
+    width: 150px;
+    height: 250px;
+  }
+}

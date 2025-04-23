@@ -30,7 +30,7 @@ const HeroSection = () => {
   return (
     <>
       <div className="wrap">
-        <img alt="wrap_logo" src={logo} />
+        <img alt="wrap_logo" src={logo} className={styles.wrap_logo} />
         <div className={styles.content}>
           <div className={styles.info_block}>
             <div className={styles.title}>
@@ -44,7 +44,9 @@ const HeroSection = () => {
               </div>
             ))}
 
-            <CustomizeButton />
+            <div className={styles.btn_wrap}>
+              <CustomizeButton />
+            </div>
           </div>
 
           <ImagesAlbum images={[women_1, women_2, women_3]} />

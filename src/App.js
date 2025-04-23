@@ -29,9 +29,10 @@ function App() {
       <div className="comment-block">
         <div className="comment-info">
           <img alt="women" src={comment_women} className="comment-img" />
-          <span className="comment-name">Amy P.</span>
-
-          <div className="comment-rating">{stars}</div>
+          <div className="comment-nameAndRating">
+            <span className="comment-name">Amy P.</span>
+            <div className="comment-rating">{stars}</div>
+          </div>
 
           <div className="comment-head">One of 500+ 5 Star Reviews Online</div>
         </div>
