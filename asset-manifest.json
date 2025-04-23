@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Byteex/static/css/main.e5107218.css",
-    "main.js": "/Byteex/static/js/main.bd9c679d.js",
+    "main.css": "/Byteex/static/css/main.f1fe204b.css",
+    "main.js": "/Byteex/static/js/main.9a2a440a.js",
     "static/media/comment-women.png": "/Byteex/static/media/comment-women.0913434e92782b9b46e2.png",
     "static/media/women-1.png": "/Byteex/static/media/women-1.5e53044a2fee6635d42a.png",
     "static/media/women-3.png": "/Byteex/static/media/women-3.f553e82e873a21bec132.png",
@@ -25,17 +25,17 @@
     "static/media/small_Logo_9.svg": "/Byteex/static/media/small_Logo_9.29c4e3f8d6070c515764baf65bfc8acc.svg",
     "static/media/small_Logo_4.svg": "/Byteex/static/media/small_Logo_4.8064bff1237dbb69c7ea6af59feb1582.svg",
     "static/media/small_Logo_1.svg": "/Byteex/static/media/small_Logo_1.89cbafa7e2976f93be508b463968b4cd.svg",
+    "index.html": "/Byteex/index.html",
     "static/media/small_Logo_8.svg": "/Byteex/static/media/small_Logo_8.c46ff5b92a08b9e21f672ae360dd3537.svg",
     "static/media/clock.svg": "/Byteex/static/media/clock.d1fab7b3066cb4f8eb4a5e4e70653702.svg",
-    "index.html": "/Byteex/index.html",
     "static/media/arrow.svg": "/Byteex/static/media/arrow.7f11cdf59702d111a879615c66eaad15.svg",
     "static/media/arrow-left.svg": "/Byteex/static/media/arrow-left.98466506d608997aa7ccaf9952e457f9.svg",
     "static/media/arrow-right.svg": "/Byteex/static/media/arrow-right.4de0304d1fcf499e41aa2b98e0aab9fe.svg",
-    "main.e5107218.css.map": "/Byteex/static/css/main.e5107218.css.map",
-    "main.bd9c679d.js.map": "/Byteex/static/js/main.bd9c679d.js.map"
+    "main.f1fe204b.css.map": "/Byteex/static/css/main.f1fe204b.css.map",
+    "main.9a2a440a.js.map": "/Byteex/static/js/main.9a2a440a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5107218.css",
-    "static/js/main.bd9c679d.js"
+    "static/css/main.f1fe204b.css",
+    "static/js/main.9a2a440a.js"
   ]
 }
